@@ -1,5 +1,5 @@
 <template>
-    <v-app fluid >
+    <v-app fluid>
 
         <v-app-bar :clipped-left="clipped" fixed flat app style="background:#ffffff">
             <v-spacer></v-spacer>
@@ -11,7 +11,7 @@
             <v-spacer></v-spacer>
         </v-app-bar>
 
-        <v-main >
+        <v-main  style="position:relative;height:100">
             <v-container class="fill-height" fluid>
                 <nuxt />
             </v-container>
