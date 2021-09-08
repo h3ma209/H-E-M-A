@@ -59,6 +59,7 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 .v-application{
   font-family: 'Montserrat', sans-serif;
   padding: 0;
