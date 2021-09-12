@@ -11,8 +11,8 @@
             <v-spacer></v-spacer>
         </v-app-bar>
 
-        <v-main  style="position:relative;height:100">
-            <v-container class="fill-height" fluid>
+        <v-main style="position:relative;height:100;">
+            <v-container class="fill-height fill-height ma-0 pa-0" fluid>
                 <nuxt />
             </v-container>
         </v-main>
@@ -25,7 +25,7 @@
 
 <script>
 export default {
-    
+
     data() {
         return {
             clipped: false,
@@ -59,10 +59,16 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-.v-application{
-  font-family: 'Montserrat', sans-serif;
-  padding: 0;
-  margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.0.13/css/all.css");
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+.v-application {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
 }
 </style>
