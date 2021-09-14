@@ -1,16 +1,16 @@
 <template>
     <div class="page">
         <v-overlay z-index="999999999" :value="overlay">
-            <v-card >
+            <v-card>
                 <v-carousel v-model="model">
-                    <v-carousel-item v-for="(ui, i) in uis" :key="i" >
-                        <v-img :src="ui.img" contain>
+                    <v-carousel-item v-for="(ui, i) in uis" :key="i">
+                        <v-img :src="ui.img" contain max-width="600">
 
                         </v-img>
                     </v-carousel-item>
                 </v-carousel>
             </v-card>
-            <v-btn @click="overlay = !overlay">Close</v-btn>
+            <v-btn @click="overlay = !overlay" class="error">Close</v-btn>
         </v-overlay>
         <div class="landing">
             <v-img src="/white_eclipse.svg" class="eclipse" max-height="150px"></v-img>
@@ -66,16 +66,16 @@
             <h1>ss</h1>
         </div>
         <div class="ui-portfolio d-flex justify-center align-center mb-6 pa-2">
-            <v-row style="background:red" align="center" justify="center">
-                <v-col class="pa-1 ma-4 d-flex justify-center align-center" lg='3' xs='1'   style="background:pink" v-for="ui,i in uis" :key="i">
+            <v-row align="center" justify="center">
+                <v-col class="pa-1 ma-4 d-flex justify-center align-center" lg='3' xs='1'  v-for="ui,i in uis" :key="i">
                     <!-- <v-img :src="ui.img" max-height="300"></v-img> -->
                     <v-hover>
                         <template v-slot:default="{ hover }">
-                            <v-card class="mx-auto" >
+                            <v-card class="mx-auto">
                                 <v-img :src="ui.img" max-width="350"></v-img>
                                 <v-fade-transition>
                                     <v-overlay v-if="hover" absolute color="#036358">
-                                        <v-btn @click="overlay = !overlay">See more info</v-btn>
+                                        <v-btn @click="overlay = !overlay" class="primary rounded-pill">See more</v-btn>
                                     </v-overlay>
                                 </v-fade-transition>
 
@@ -104,7 +104,7 @@ export default {
     data() {
         return {
             model: 0,
-            
+
             projects: [
                 { title: 'CRM', tech: 'Bootsrap, PHP, Laravel', description: 'Customer relations project i made for SmartMed.com fully secure and responsive', source: '', live: '', img: 'https://camo.githubusercontent.com/0b89e43464db6e41ca59cb65d8ace2ea5a76f26940a5644ea7c82e7a17abf5b1/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f353637353133392f73637265656e73686f74732f31353631303431312f6d656469612f33633433633365386131646232316430666234343639626634643731313131312e6a70673f636f6d70726573733d3126726573697a653d38303078363030' },
                 { title: 'Ford UI', tech: 'Bootsrap, PHP, Laravel', description: 'Made this for my dream car', source: '', live: '', img: 'https://raw.githubusercontent.com/h3ma209/ui-designs-xd/main/adept/Web%201920%20%E2%80%93%203.png' },
@@ -112,9 +112,16 @@ export default {
             ],
             uis: [
                 { title: 'lorem ipsum', link: '', img: 'https://cdn.dribbble.com/users/5675139/screenshots/15527004/media/991a173559cb2938f3ccccc242a2095f.jpg?compress=1&resize=800x600' },
-                { title: 'lorem ipsum', link: '', img: 'https://cdn.dribbble.com/users/5675139/screenshots/15527004/media/991a173559cb2938f3ccccc242a2095f.jpg?compress=1&resize=800x600' },
-                { title: 'lorem ipsum', link: '', img: 'https://cdn.dribbble.com/users/5675139/screenshots/15527004/media/991a173559cb2938f3ccccc242a2095f.jpg?compress=1&resize=800x600' },
-                { title: 'lorem ipsum', link: '', img: 'https://cdn.dribbble.com/users/5675139/screenshots/15527004/media/991a173559cb2938f3ccccc242a2095f.jpg?compress=1&resize=800x600' },
+                { title: 'lorem ipsum', link: '', img: 'https://cdn.dribbble.com/users/5675139/screenshots/14548447/media/bc10463e52e08c6fa9946adf301983aa.jpg?compress=1&resize=1600x1200' },
+                { title: 'lorem ipsum', link: '', img: 'https://cdn.dribbble.com/users/5675139/screenshots/15610411/media/3c43c3e8a1db21d0fb4469bf4d711111.jpg?compress=1&resize=800x600' },
+                { title: 'lorem ipsum', link: '', img: 'https://cdn.dribbble.com/users/5675139/screenshots/15527090/media/1a6cf7d0bc3ba48442e948e754e99e2a.jpg?compress=1&resize=800x600' },
+                { title: 'lorem ipsum', link: '', img: 'https://raw.githubusercontent.com/h3ma209/ui-designs-xd/main/adept/Web%201920%20%E2%80%93%203.png' },
+                { title: 'lorem ipsum', link: '', img: 'https://cdn.dribbble.com/users/5675139/screenshots/13449948/media/5291b3364e8acd10f244a764339561f0.png?compress=1&resize=800x600' },
+                { title: 'lorem ipsum', link: '', img: 'https://cdn.dribbble.com/users/5675139/screenshots/13645399/media/41a1ab7c67bf4f4904e57169122555aa.png?compress=1&resize=800x600' },
+                { title: 'lorem ipsum', link: '', img: 'https://cdn.dribbble.com/users/5675139/screenshots/14543140/media/b8ac26d608313121ab147e8ef7b1f618.png?compress=1&resize=800x600' },
+                { title: 'lorem ipsum', link: '', img: 'https://cdn.dribbble.com/users/5675139/screenshots/15129742/media/fda768518f6102d1b81c0406d6aeca45.jpg?compress=1&resize=800x600' },
+                { title: 'lorem ipsum', link: '', img: 'https://cdn.dribbble.com/users/5675139/screenshots/15423495/media/ab5b27da80c12f788b6427f9d5423361.png?compress=1&resize=800x600' },
+                
             ],
             overlay: false,
         }
