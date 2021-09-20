@@ -45,7 +45,7 @@
 
                 <div class="img">
 
-                    <v-img contain max-height="650" max-width="550" src="/test.png"></v-img>
+                    <v-img contain max-height="650" max-width="550" src="https://drive.google.com/file/d/1yfnCrCeuMpyEggGRFqrnGin1zkhrQ_O_/view?usp=sharing"></v-img>
                 </div>
                 <div class="purple-blur"></div>
             </v-row>
@@ -128,9 +128,12 @@ export default {
             model: 0,
 
             projects: [
-                { title: 'CRM', tech: 'Bootsrap, PHP, Laravel', description: 'Customer relations project i made for SmartMed.com fully secure and responsive', source: '', live: '', img: 'https://camo.githubusercontent.com/0b89e43464db6e41ca59cb65d8ace2ea5a76f26940a5644ea7c82e7a17abf5b1/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f353637353133392f73637265656e73686f74732f31353631303431312f6d656469612f33633433633365386131646232316430666234343639626634643731313131312e6a70673f636f6d70726573733d3126726573697a653d38303078363030' },
-                { title: 'Ford UI', tech: 'Bootsrap, PHP, Laravel', description: 'Made this for my dream car', source: '', live: '', img: 'https://raw.githubusercontent.com/h3ma209/ui-designs-xd/main/adept/Web%201920%20%E2%80%93%203.png' },
-                { title: 'Mustang UI', tech: 'Bootsrap, PHP, Laravel', description: 'Made this for my dream car', source: '', live: '', img: 'https://cdn.dribbble.com/users/5675139/screenshots/15527090/media/1a6cf7d0bc3ba48442e948e754e99e2a.jpg?compress=1&resize=800x600' },
+                { title: 'CRM', tech: 'Bootsrap, VueJS,PHP, Laravel', description: 'Customer relations project i made for SmartMed.com fully secure and responsive for handling customers, contracts, receipts, etc....', source: 'https://github.com/h3ma209/CRM', live: '', img: 'https://raw.githubusercontent.com/h3ma209/CRM/master/Screenshot%20(20).png' },
+                { title: 'Mobile fashion ecommerce', tech: 'Nuxjs, Vuejs', description: 'A Fashion ecommerce with a cool and simple UI with search and filtering', source: 'https://github.com/h3ma209/mobile-fashion-ecom', live: '', img: 'https://camo.githubusercontent.com/0b89e43464db6e41ca59cb65d8ace2ea5a76f26940a5644ea7c82e7a17abf5b1/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f353637353133392f73637265656e73686f74732f31353631303431312f6d656469612f33633433633365386131646232316430666234343639626634643731313131312e6a70673f636f6d70726573733d3126726573697a653d38303078363030' },
+                { title: 'Mustang UI', tech: 'HTML, CSS', description: 'Made this for my dream car using just html and css', source: 'https://github.com/h3ma209/Mustang-ui', live: 'https://h3ma209.github.io/Mustang-ui/', img: 'https://raw.githubusercontent.com/big-yoshi/mustang-ui/master/assets/ui.png' },
+                { title: 'Boss 302', tech: "HTML, CSS, JS, GSAP", description: "My all time favorite classic muscle car", source: 'https://github.com/h3ma209/cool-simple-scroll-magic', live: 'https://h3ma209.github.io/cool-simple-scroll-magic/', img: 'https://raw.githubusercontent.com/h3ma209/cool-simple-scroll-magic/gh-pages/Screenshot%20(183).png' },
+                { title: '1970 Boss 302', tech: "HTML, CSS, JS, GSAP", description: "the classic legendary 1970 ford mustang boss 302", source: 'https://github.com/h3ma209/Ford-UI', live: 'https://h3ma209.github.io/Ford-UI/', img: 'https://raw.githubusercontent.com/h3ma209/Ford-UI/gh-pages/Screenshot%20(182).png' },
+
             ],
             uis: [
                 { title: 'Aryan Post', link: 'https://drive.google.com/file/d/1IjEAujst6hoitpjQyWGXbNON7BQsnOMH/view?usp=sharing', img: 'https://lh3.googleusercontent.com/fife/AAWUweWx7xrBzVlsES_lUPC9xIGGiZPYhCjZ58C5BYelOQ72CSMk5tNBUfwLa2-IozPT9qEQ24d36gZWMqZMKx55BZK--wW1-jgBa_w0r_7lCFnJcXJGZsPs3ONn3foj6ftbyIOgCAcpNMMHGuG64c0HEqzrPW07slyB2H_2iz_sgBVyLw_Ws-EDY5eF9EE1xQTAg5lufyPAEFOOjpx6yufRm9-WGSoYZBKy2PAhR0cI9_4MWSTInD9hMQv1Lic_9y6ULAQGmzEV-i08QojgvzyHb0bnPghDO-cjKqXDHB2pVwp7who1zCYtWNsyHUA35tKut7WMtEKjf6kqNbikLY7a_Z-GgWsst9tJNCXleSY-hA7sQenRkzylBw9xZI698-J4JG4-0uTj7Sc6Qfn8Jfgxv7dT6A1U2cuPEc566uT5Q8UlDaN-WGgr57vkp9ToBP-lW_M3-0Wcqcr6bt_5dlPpASVw6WpO2D5uIeYe_fcsS_aHhh2ktbnXw5yM1JdSfwlbpVeg3EZDo7HQikl4YOJnpOpdXDJE9bBszWl70ZlSl-V4tSjYB5m8j0UllyqHHwIrVDIqiweXp2pJOKKkIU88KUddXN1Ne1K1ztLs8rKh0sRb5yJO79tpRvpoSAg5ML6o6zEvw9V-_p4wJ_cmxSEXuxnKPusGne40eIpjrTBd4o162zZdJgOEEirzIzAUQOHOG2nqofwjU66CyuG-Hi31XZ2mYDPkSd2VvHY=w1920-h923-ft' },
@@ -171,9 +174,9 @@ export default {
                     end: "bottom top",
                 }
             })
-            .from('.about h1', { opacity: 0, duration: 1 })
-            .from('.about span', { opacity: 0, duration: 1, width: 0 })
-            .from('.about p', { opacity: 0, duration: 1 });
+                .from('.about h1', { opacity: 0, duration: 1 })
+                .from('.about span', { opacity: 0, duration: 1, width: 0 })
+                .from('.about p', { opacity: 0, duration: 1 });
         }
     }
 
