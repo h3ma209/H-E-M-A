@@ -15,6 +15,17 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    scripts:[
+      {
+        src:'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'
+      },
+      {
+        src:'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js'
+      },
+      {
+        src:'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'
+      }
     ]
   },
 
