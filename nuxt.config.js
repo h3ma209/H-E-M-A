@@ -18,12 +18,15 @@ export default {
     ],
     scripts:[
       {
+        type: 'text/javascript',
         src:'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'
       },
       {
+        type: 'text/javascript',
         src:'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js'
       },
       {
+        type: 'text/javascript',
         src:'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'
       }
     ]
