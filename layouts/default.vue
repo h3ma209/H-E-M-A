@@ -6,7 +6,7 @@
             <v-toolbar-title v-text="title" />
             <v-spacer />
             <v-toolbar-items class="ma-14">
-                <v-btn v-bind:class="{ 'font-weight-bold': item.active }" color="navbartext" text v-for="item in items" :key="item.icon" to="#" :title="item.title" style="color:white;">{{ item.title }}</v-btn>
+                <v-btn v-bind:class="{ 'font-weight-bold': item.active }" color="navbartext" text v-for="item in items" :key="item.icon" :href="item.to" target="_blank" :title="item.title" style="color:white;">{{ item.title }}</v-btn>
             </v-toolbar-items>
             <v-spacer></v-spacer>
         </v-app-bar>
@@ -40,15 +40,16 @@ export default {
                 },
                 {
                     icon: 'mdi-chart-bubble',
-                    title: 'About Me',
-                    to: '/inspire'
+                    title: 'My CV',
+                    to: 'https://drive.google.com/file/d/1bhpjJcbszj6sj58JtR_bkTHJD-5HF7Yp/view?usp=sharing'
+                },
+                {
+                    title: 'Portfolio',
+                    to:'https://drive.google.com/file/d/14WyCpHtfpTxASUZq0-SiKzx-y9qw1-N5/view?usp=sharing'
                 },
                 {
                     title: 'Contact Me'
                 },
-                {
-                    title: 'Portfolio'
-                }
             ],
 
             right: true,
