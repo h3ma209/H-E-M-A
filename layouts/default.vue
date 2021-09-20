@@ -48,7 +48,8 @@ export default {
                     to:'https://drive.google.com/file/d/14WyCpHtfpTxASUZq0-SiKzx-y9qw1-N5/view?usp=sharing'
                 },
                 {
-                    title: 'Contact Me'
+                    title: 'Contact Me',
+                    to:'mailto:hema.omer007@gmail.com'
                 },
             ],
 
