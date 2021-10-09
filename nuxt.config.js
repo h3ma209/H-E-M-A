@@ -16,18 +16,10 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
-    scripts:[
+    scripts: [
       {
         type: 'text/javascript',
-        src:'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'
-      },
-      {
-        type: 'text/javascript',
-        src:'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js'
-      },
-      {
-        type: 'text/javascript',
-        src:'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'
       }
     ]
   },
@@ -47,6 +39,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    'nuxt-gsap-module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -60,6 +53,14 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
+  gsap: {
+    extraPlugins: {
+      scrollTo: true,
+      scrollTrigger: true
+    },
+
+  },
+
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
@@ -70,7 +71,7 @@ export default {
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
-    defaultAssets: {icons: 'fa'},
+    defaultAssets: { icons: 'fa' },
     icons: {
       iconfont: 'fa',
     },
@@ -85,7 +86,7 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
-          navbartext:'#595959'
+          navbartext: '#595959'
         },
 
       }

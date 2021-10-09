@@ -132,14 +132,15 @@ export default {
             model: 0,
 
             projects: [
+                { title: 'Ford Dealership Redesign', tech: 'Vuetify, NuxtJS', description:'As Ford fanboy i wanted to make a cool design for the 2021 shelby GT500', source:'https://github.com/h3ma209/Ford-dealership', live:'https://gt500.netlify.app/' , img:'https://raw.githubusercontent.com/h3ma209/Ford-dealership/master/thumbnail.png'},
                 { title: 'MovieDB', tech: 'Vuetify, NuxtJS, Vuex', description: 'IMDB like movie browsing website you can search for movies and etc.. i used REST API for the movie datas', source: 'https://github.com/h3ma209/MovieDB', live: 'https://moviedbb.netlify.app/', img: 'https://raw.githubusercontent.com/h3ma209/MovieDB/master/Screenshot%20(27).png' },
                 { title: 'CRM', tech: 'Bootsrap, VueJS,PHP, Laravel', description: 'Customer relations project i made for SmartMed.com fully secure and responsive for handling customers, contracts, receipts, etc....', source: 'https://github.com/h3ma209/CRM', live: '', img: 'https://raw.githubusercontent.com/h3ma209/CRM/master/Screenshot%20(20).png' },
+                { title: '1970 Boss 302', tech: "HTML, CSS, JS, GSAP", description: "the classic legendary 1970 ford mustang boss 302", source: 'https://github.com/h3ma209/Ford-UI', live: 'https://h3ma209.github.io/Ford-UI/', img: 'https://raw.githubusercontent.com/h3ma209/Ford-UI/gh-pages/Screenshot%20(182).png' },
                 { title: 'Mobile fashion ecommerce', tech: 'Nuxjs, Vuejs', description: 'A Fashion ecommerce with a cool and simple UI with search and filtering', source: 'https://github.com/h3ma209/mobile-fashion-ecom', live: '', img: 'https://camo.githubusercontent.com/0b89e43464db6e41ca59cb65d8ace2ea5a76f26940a5644ea7c82e7a17abf5b1/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f353637353133392f73637265656e73686f74732f31353631303431312f6d656469612f33633433633365386131646232316430666234343639626634643731313131312e6a70673f636f6d70726573733d3126726573697a653d38303078363030' },
+                { title: 'Mustang UI', tech: 'HTML, CSS', description: 'Made this for my dream car using just html and css', source: 'https://github.com/h3ma209/Mustang-ui', live: 'https://h3ma209.github.io/Mustang-ui/', img: 'https://raw.githubusercontent.com/big-yoshi/mustang-ui/master/assets/ui.png' },
                 { title: 'Node job portal', tech: 'Bootstrap, Nodejs, Socket.io, MongoDB', description: 'this was a project i was working on back when i was in 51labs, its a simple job portal ', source: 'https://github.com/h3ma209/node-job-portal', live: '', img: 'https://raw.githubusercontent.com/h3ma209/node-job-portal/master/Screenshot%20(4).png' },
                 { title: 'Personal Blog', tech: 'Vuejs, Nodejs, Socket.io', description: 'Its a Real time private blog you can use it as diaries More features are coming I will be fixing the bugs when im done with exams', source: '', live: '', img: 'https://raw.githubusercontent.com/h3ma209/ui-designs-xd/main/blog/Web%201920%20%E2%80%93%201.png' },
-                { title: 'Mustang UI', tech: 'HTML, CSS', description: 'Made this for my dream car using just html and css', source: 'https://github.com/h3ma209/Mustang-ui', live: 'https://h3ma209.github.io/Mustang-ui/', img: 'https://raw.githubusercontent.com/big-yoshi/mustang-ui/master/assets/ui.png' },
                 { title: 'Boss 302', tech: "HTML, CSS, JS, GSAP", description: "My all time favorite classic muscle car", source: 'https://github.com/h3ma209/cool-simple-scroll-magic', live: 'https://h3ma209.github.io/cool-simple-scroll-magic/', img: 'https://raw.githubusercontent.com/h3ma209/cool-simple-scroll-magic/gh-pages/Screenshot%20(183).png' },
-                { title: '1970 Boss 302', tech: "HTML, CSS, JS, GSAP", description: "the classic legendary 1970 ford mustang boss 302", source: 'https://github.com/h3ma209/Ford-UI', live: 'https://h3ma209.github.io/Ford-UI/', img: 'https://raw.githubusercontent.com/h3ma209/Ford-UI/gh-pages/Screenshot%20(182).png' },
 
             ],
             uis: [
@@ -169,23 +170,9 @@ export default {
 
     },
     mounted: function () {
-        this.scrollAnimation();
     },
-    methods: {
-        scrollAnimation() {
-            gsap.timeline({
-                scrollTrigger: {
+    methods: {}
 
-                    trigger: ".about",
-                    start: "100 center",
-                    end: "bottom top",
-                }
-            })
-                .from('.about h1', { opacity: 0, duration: 1 })
-                .from('.about span', { opacity: 0, duration: 1, width: 0 })
-                .from('.about p', { opacity: 0, duration: 1 });
-        }
-    }
 
 }
 </script>

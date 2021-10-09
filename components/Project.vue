@@ -6,11 +6,11 @@
                     <h1 class="mb-4">{{project.title}}</h1>
                 </v-card-title>
                 <v-card-subtitle><span>{{project.tech}}</span></v-card-subtitle>
-                <v-card-text class="">
-                    <p>{{project.description}}</p>
+                <v-card-text >
+                    <p class="ma-0">{{project.description}}</p>
                 </v-card-text>
 
-                <v-card-actions>
+                <v-card-actions >
                     <v-btn class="rounded-pill elevation-0 primary pa-5" :href="project.live" target="_blank">Live</v-btn>
                     <v-btn class="rounded-pill elevation-0 pa-5" outlined :href="project.source" target="_blank">Source</v-btn>
                 </v-card-actions>
