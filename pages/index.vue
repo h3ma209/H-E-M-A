@@ -305,7 +305,6 @@ export default {
 /* Projects ======================================== */
 
 .projects-portfolio {
-    height: 100%;
     width: 100%;
 }
 .projects-portfolio .project {
