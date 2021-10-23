@@ -13,9 +13,9 @@
     "@nuxtjs/pwa": "^3.3.5",
     "aos": "^2.3.4",
     "core-js": "^3.9.1",
+    "gsap": "^3.8.0",
     "nuxt": "^2.15.3",
     "nuxt-gsap-module": "^1.5.0"
-
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",

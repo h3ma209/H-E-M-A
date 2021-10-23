@@ -1,6 +1,6 @@
 <template>
     <v-app fluid>
-
+        <!-- <Loader></Loader> -->
         <v-app-bar :clipped-left="clipped" fixed flat app style="background:#ffffff">
             <v-spacer></v-spacer>
             <v-toolbar-title v-text="title" />
@@ -24,7 +24,11 @@
 </template>
 
 <script>
+// import Loader from '../components/Loader.vue'
 export default {
+    components:{
+        // Loader
+    },
 
     data() {
         return {
