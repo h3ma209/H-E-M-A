@@ -16,7 +16,7 @@
 
         <div class="landing">
             <v-img src="/white_eclipse.svg" class="eclipse" max-height="150px"></v-img>
-            <v-row no-gutter class="text-center mt-14" align="center" justify="center">
+            <v-row no-gutter class="text-center mt-14 landing-title" align="center" justify="center">
                 <h1 class="font-weight-regular mt-12">I'm <span class="primary--text font-weight-regular">Hema</span>, Im a Fullstack developer and a UI/UX designer</h1>
             </v-row>
             <v-row class="dots" align="center" justify="center">
@@ -110,7 +110,7 @@
         <div class="social-media">
             <v-row align="center" justify="center" class="fill-height pa-0">
                 <v-col class="fill-height pa-0">
-                    <v-parallax id="prlx" style="height:100%" class="fill-height ma-0 pa-0" src="https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                    <v-parallax id="prlx" style="height:100%" class="fill-height ma-0 pa-0" src="https://images.pexels.com/photos/1955134/pexels-photo-1955134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
                         <!-- <v-row class="ma-0 pa-14 text-center" align="center" justify="center" style="background:green;">
                             <v-col class="pa-0 mx-1"  id="codepen" >
                                 <v-btn width="150" height="150">
@@ -133,25 +133,25 @@
                                 </v-btn>
                             </v-col>
                         </v-row> -->
-                        <v-row justify="center" align="center" class="text-center social-accounts px-10">
-                            <v-col lg="6" >
-                                <v-btn width="150" height="150" id="codepen">
+                        <v-row justify="center" align="center" class="text-center px-10" id="social-accounts">
+                            <v-col >
+                                <v-btn width="150" height="150" id="codepen" target="_blank" href="https://codepen.io/fugi">
                                     <v-icon>fab fa-codepen</v-icon>
                                 </v-btn>
 
                             </v-col>
-                            <v-col lg="6"  >
-                                <v-btn width="150" height="150" id="twitter">
+                            <v-col >
+                                <v-btn width="150" height="150" id="twitter" target="_blank" href="https://twitter.com/H3ma209">
                                     <v-icon>fab fa-twitter</v-icon>
                                 </v-btn>
                             </v-col>
-                            <v-col lg="6"  >
-                                <v-btn max-width="150" height="150" id="dribble" width="150">
+                            <v-col >
+                                <v-btn max-width="150" height="150" id="dribble" width="150" target="_blank" href="https://dribbble.com/hema209">
                                     <v-icon>fab fa-dribbble</v-icon>
                                 </v-btn>
                             </v-col>
-                            <v-col lg="6"  >
-                                <v-btn width="150" height="150" id="github">
+                            <v-col >
+                                <v-btn width="150" height="150" id="github"  target="_blank" href="https://github.com/h3ma209">
                                     <v-icon>fab fa-github</v-icon>
                                 </v-btn>
                             </v-col>
@@ -180,7 +180,7 @@
                 </v-col>
             </v-row>
         </div>
-        <div class="whitespace"></div>
+
     </div>
 
 </template>
@@ -318,7 +318,7 @@ export default {
 
 /* Social media ++++++++++++++++++++++++++++++++++*/
 .social-media {
-    height: 120vh;
+    height: 80vh;
     width: 100%;
     background: black;
     overflow: hidden;
@@ -332,47 +332,47 @@ export default {
 .social-media i {
     font-size: 8vh;
 }
-.social-media .social-accounts {
-    height: 50%;
+.social-media #prlx #social-accounts {
+    height: 50% !important;
 }
-.social-media .social-accounts * {
-    transition: all 0.3 ease-in-out;
+.social-media #social-accounts * {
+    transition: all 0.5 ease-in-out;
 }
-.social-media .social-accounts #twitter {
+.social-media #social-accounts #twitter {
     background: white;
     color: #5e7ce2;
 }
-.social-media .social-accounts #twitter:hover,
+.social-media #social-accounts #twitter:hover,
 #twitter:active {
     background: #5e7ce2;
     color: white;
 }
 
-.social-media .social-accounts #dribble {
+.social-media #social-accounts #dribble {
     background: white;
     color: #ff3d6d;
 }
-.social-media .social-accounts #dribble:hover,
+.social-media #social-accounts #dribble:hover,
 #dribble:active {
     background: #ff3d6d;
     color: white;
 }
 
-.social-media .social-accounts #codepen {
+.social-media #social-accounts #codepen {
     background: white;
     color: black;
 }
-.social-media .social-accounts #codepen:hover,
+.social-media #social-accounts #codepen:hover,
 #codepen:active {
     background: black;
     color: white;
 }
 
-.social-media .social-accounts #github {
+.social-media #social-accounts #github {
     background: white;
     color: #313131;
 }
-.social-media .social-accounts #github:hover,
+.social-media #social-accounts #github:hover,
 #github:active {
     background: #313131;
     color: white;
@@ -410,7 +410,17 @@ export default {
     font-weight: 300;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 500px) {
+    .landing {
+    }
+    .landing h1 {
+        font-size: 30px;
+        max-width: 80%;
+    }
+
+    .skills {
+        width: 100%;
+    }
     .about .desc {
         width: 85%;
         left: 30px;
@@ -426,7 +436,10 @@ export default {
     .about .desc p {
         font-size: 17px;
     }
-    .social-media .social-accounts {
+    .social-media{
+        height: 120vh;
+    }
+    .social-media #social-accounts {
         height: 100%;
         padding-top: 20px;
         padding-bottom: 20px;
