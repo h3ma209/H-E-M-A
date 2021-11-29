@@ -45,7 +45,7 @@ export default {
                 {
                     icon: 'mdi-chart-bubble',
                     title: 'My CV',
-                    to: 'https://drive.google.com/file/d/1bhpjJcbszj6sj58JtR_bkTHJD-5HF7Yp/view?usp=sharing'
+                    to: 'https://github.com/h3ma209/cv-pdf/blob/main/hema-omer-cv.pdf'
                 },
                 {
                     title: 'Portfolio',
