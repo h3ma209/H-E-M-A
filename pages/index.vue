@@ -8,6 +8,7 @@
                         <v-img :src="ui.img" contain max-width="600">
 
                         </v-img>
+                        
                     </v-carousel-item>
                 </v-carousel>
             </v-card>
@@ -47,7 +48,7 @@
 
                 <div class="img">
 
-                    <v-img contain max-height="650" max-width="550" src="https://drive.google.com/file/d/1yfnCrCeuMpyEggGRFqrnGin1zkhrQ_O_/view?usp=sharing"></v-img>
+                    <v-img contain max-height="700"  min-height="300"  src="/hema-bw.png"></v-img>
                 </div>
                 <div class="purple-blur"></div>
             </v-row>
@@ -108,9 +109,8 @@
         </div>
         <div class="whitespace"></div>
         <div class="social-media">
-            <v-row align="center" justify="center" class="fill-height pa-0">
-                <v-col class="fill-height pa-0">
-                    <v-parallax id="prlx" style="height:100%" class="fill-height ma-0 pa-0" src="https://images.pexels.com/photos/1955134/pexels-photo-1955134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+            
+                    <v-img id="prlx"  class="fill-height ma-0 pa-0" src="https://wallpaper.si/wp-content/uploads/2017/03/27-02-17-forest-landscape-pictures13569.jpg" alt="">
                         <!-- <v-row class="ma-0 pa-14 text-center" align="center" justify="center" style="background:green;">
                             <v-col class="pa-0 mx-1"  id="codepen" >
                                 <v-btn width="150" height="150">
@@ -133,32 +133,32 @@
                                 </v-btn>
                             </v-col>
                         </v-row> -->
-                        <v-row justify="center" align="center" class="text-center px-10" id="social-accounts">
-                            <v-col >
+                        <v-row justify="center" align="center" class="text-center fill-height" no-gutters id="social-accounts">
+                            <v-col class="fill-height d-flex flex-column align-center justify-center" lg="3"    >
                                 <v-btn width="150" height="150" id="codepen" target="_blank" href="https://codepen.io/fugi">
                                     <v-icon>fab fa-codepen</v-icon>
                                 </v-btn>
 
                             </v-col>
-                            <v-col >
+                            <v-col class="fill-height d-flex flex-column align-center justify-center" lg="3"    >
                                 <v-btn width="150" height="150" id="twitter" target="_blank" href="https://twitter.com/H3ma209">
                                     <v-icon>fab fa-twitter</v-icon>
                                 </v-btn>
                             </v-col>
-                            <v-col >
+                            <v-col class="fill-height d-flex flex-column align-center justify-center" lg="3"    >
                                 <v-btn max-width="150" height="150" id="dribble" width="150" target="_blank" href="https://dribbble.com/hema209">
                                     <v-icon>fab fa-dribbble</v-icon>
                                 </v-btn>
                             </v-col>
-                            <v-col >
+                            <v-col class="fill-height d-flex flex-column align-center justify-center" lg="3"    >
                                 <v-btn width="150" height="150" id="github"  target="_blank" href="https://github.com/h3ma209">
                                     <v-icon>fab fa-github</v-icon>
                                 </v-btn>
                             </v-col>
                         </v-row>
-                    </v-parallax>
-                </v-col>
-                <v-col class="fill-height pa-0">
+                    </v-img>
+                
+                <!-- <v-col class="fill-height pa-0">
                     <v-row justify="center" align="center" class="fill-height">
                         <v-card max-height="400" max-width="700" width="400" height="700" class="pa-12">
                             <v-card-title class="mb-7 pa-0">
@@ -177,7 +177,7 @@
                             </v-card-actions>
                         </v-card>
                     </v-row>
-                </v-col>
+                </v-col> -->
             </v-row>
         </div>
 
@@ -251,8 +251,14 @@ export default {
 </script>
 
 <style scoped>
+*{
+    scroll-behavior: smooth;
+}
 .whitespace {
     height: 30vh;
+}
+.v-parallax__content {
+    padding: 0 !important;
 }
 
 .page {
@@ -318,10 +324,9 @@ export default {
 
 /* Social media ++++++++++++++++++++++++++++++++++*/
 .social-media {
-    height: 80vh;
     width: 100%;
     background: black;
-    overflow: hidden;
+    
     padding: 0;
     margin: 0;
 }
@@ -329,17 +334,37 @@ export default {
     height: 100%;
 }
 
+.social-media #prlxs .v-parallax__content{
+    padding: 0 0 !important;
+}
+
 .social-media i {
     font-size: 8vh;
 }
 .social-media #prlx #social-accounts {
-    height: 50% !important;
+    
 }
 .social-media #social-accounts * {
-    transition: all 0.5 ease-in-out;
+    transition: all .5 ease-in-out;
 }
+
+.social-media #social-accounts .col:nth-child(1){
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.social-media #social-accounts .col:nth-child(2){
+    background: rgba(94, 124, 226,0.9);
+    }
+.social-media #social-accounts .col:nth-child(3){
+    background: rgba(255, 61, 109,0.9);
+}
+.social-media #social-accounts .col:nth-child(4){
+    background: rgba(255, 255, 255,0.9);
+}
+
 .social-media #social-accounts #twitter {
     background: white;
+    
     color: #5e7ce2;
 }
 .social-media #social-accounts #twitter:hover,
@@ -350,7 +375,7 @@ export default {
 
 .social-media #social-accounts #dribble {
     background: white;
-    color: #ff3d6d;
+    color: rgb(255, 61, 109);
 }
 .social-media #social-accounts #dribble:hover,
 #dribble:active {
@@ -441,8 +466,7 @@ export default {
     }
     .social-media #social-accounts {
         height: 100%;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        
     }
 }
 
