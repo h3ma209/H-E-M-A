@@ -73,7 +73,7 @@
         </div>
 
         <div class="whitespace"></div>
-        <h1 class="text-center mb-14 mt-14">UIs</h1>
+        <!-- <h1 class="text-center mb-14 mt-14">UIs</h1> -->
         <div class="ui-portfolio d-flex justify-center align-center mb-6 pa-2">
 
             <v-row align="center" justify="center">
@@ -102,7 +102,7 @@
             </v-row>
         </div>
         <div class="whitespace"></div>
-        <h1 class="text-center mb-14 mt-14">Projects</h1>
+        <!-- <h1 class="text-center mb-14 mt-14">Projects</h1> -->
 
         <div class="projects-portfolio pr-4 pl-4" align='center' justify="space-between">
             <Project v-for="project,i in projects" :key="i" :project="project"></Project>
