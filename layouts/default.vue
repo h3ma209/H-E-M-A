@@ -50,7 +50,7 @@ export default {
                 {
                     icon: 'mdi-chart-bubble',
                     title: 'My CV',
-                    to: 'https://github.com/h3ma209/cv-pdf/blob/main/hema-omer-cv.pdf'
+                    to: '/hema-omer-cv.pdf'
                 },
                 {
                     title: 'Portfolio',
