@@ -1,7 +1,7 @@
 <template>
     <v-app fluid>
         <!-- <Loader></Loader> -->
-        <v-app-bar :clipped-left="clipped" fixed flat app style="background:#ffffff">
+        <v-app-bar :clipped-left="clipped" fixed flat app style="background:#ffffff" v-if="!$vuetify.breakpoint.xs">
             <v-spacer></v-spacer>
             <v-toolbar-title v-text="title" />
             <v-spacer />
@@ -11,23 +11,28 @@
             <v-spacer></v-spacer>
         </v-app-bar>
 
+        <NavBtn v-else></NavBtn>
+
         <v-main style="position:relative;height:100;">
-            <v-container class="fill-height fill-height ma-0 pa-0" fluid>
+            <v-container class="fill-height ma-0 pa-0" fluid>
                 <nuxt />
             </v-container>
         </v-main>
 
         <v-footer :absolute="!fixed" app>
-            <span>&copy; {{ new Date().getFullYear() }}</span>
+            <!-- <span>&copy; {{ new Date().getFullYear() }}</span> -->
+            <div class="text-span">hema.omer007@gmail.com</div>
         </v-footer>
     </v-app>
 </template>
 
 <script>
 // import Loader from '../components/Loader.vue'
+import NavBtn from '../components/NavBtn.vue'
 export default {
     components:{
         // Loader
+        NavBtn
     },
 
     data() {

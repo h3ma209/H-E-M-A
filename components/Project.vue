@@ -11,7 +11,7 @@
                 </v-card-text>
 
                 <v-card-actions >
-                    <v-btn class="rounded-pill elevation-0 primary pa-5" :href="project.live" target="_blank">Live</v-btn>
+                    <v-btn class="rounded-pill elevation-0 primary pa-5" :href="project.live" v-if="project.live" target="_blank">Live</v-btn>
                     <v-btn class="rounded-pill elevation-0 pa-5" outlined :href="project.source" target="_blank">Source</v-btn>
                 </v-card-actions>
             </v-card>
@@ -24,7 +24,7 @@
                     <v-card class="pa-2 rounded-circle mr-1 ml-1 elevation-0 " style="background:yellow" tile></v-card>
                 </v-col>
                 <v-col class="pa-0 ma-0">
-                    <v-img class="rounded-b-lg" lazy-src="https://picsum.photos/id/11/10/6" max-height="350" style="background:red;" :src='project.img'>
+                    <v-img class="rounded-b-lg" eager lazy-src="https://picsum.photos/id/11/10/6" max-height="350"  :src='project.img'>
                     </v-img>
                 </v-col>
             </v-row>
