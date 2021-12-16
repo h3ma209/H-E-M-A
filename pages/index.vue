@@ -200,6 +200,7 @@ export default {
         return {
             model: 0,
             projects: [
+                { title: 'KRG Vaccine Portal', tech:'Vuetify, NuxtJS', description:'it was late at night the idea came to me i didnt design a ui for it, i just made whatever came to my mind', source:'https://github.com/h3ma209/KRG-vaccine-portal', live:'https://krg-vaccine.netlify.app/' ,img:"https://github.com/h3ma209/KRG-vaccine-portal/raw/master/krg-portal-thumbnail.png?raw=true"},
                 { title: 'Ford Dealership', tech: 'Vuetify, NuxtJS', description: 'As Ford fanboy i wanted to make a cool design for the 2021 shelby GT500', source: 'https://github.com/h3ma209/Ford-dealership', live: 'https://gt500.netlify.app/', img: 'https://raw.githubusercontent.com/h3ma209/Ford-dealership/master/thumbnail.png' },
                 { title: 'MovieDB', tech: 'Vuetify, NuxtJS, Vuex', description: 'IMDB like movie browsing website you can search for movies and etc.. i used REST API for the movie datas', source: 'https://github.com/h3ma209/MovieDB', live: 'https://moviedbb.netlify.app/', img: 'https://raw.githubusercontent.com/h3ma209/MovieDB/master/Screenshot%20(27).png' },
                 { title: 'CRM', tech: 'Bootsrap, VueJS,PHP, Laravel', description: 'Customer relations project i made for SmartMed.com fully secure and responsive for handling customers, contracts, receipts, etc....', source: 'https://github.com/h3ma209/CRM', live: '', img: 'https://raw.githubusercontent.com/h3ma209/CRM/master/Screenshot%20(20).png' },
@@ -212,9 +213,9 @@ export default {
             ],
             uis: [
                 { title: 'Aryan Post', link: 'https://drive.google.com/file/d/1IjEAujst6hoitpjQyWGXbNON7BQsnOMH/view?usp=sharing', img: 'https://github.com/h3ma209/ui-designs-xd/blob/main/aryan-post-thumbnail.jpg?raw=true' },
+                { title: 'Sardam post', link: 'https://drive.google.com/file/d/1t6eQGWb8GrqxFrvFpGQXmqtahi_5Jc5h/view?usp=sharing', img: 'https://github.com/h3ma209/ui-designs-xd/blob/main/sardam-post-thumbnail.jpg?raw=true' },
                 { title: 'Potan', link: 'https://drive.google.com/file/d/19HoGMisaSD9Se74q1-zlBMFuMFBUDLsF/view?usp=sharing', img: 'https://github.com/h3ma209/ui-designs-xd/blob/main/potan-thumbnail.jpg?raw=true' },
                 { title: 'Sai2', link: 'https://drive.google.com/file/d/125i8GFcjv8EGoRDBXC2E0crg9uL1TDh0/view?usp=sharing', img: 'https://github.com/h3ma209/ui-designs-xd/blob/main/sai-thumbnail.jpg?raw=true' },
-                { title: 'Sardam post', link: 'https://drive.google.com/file/d/1t6eQGWb8GrqxFrvFpGQXmqtahi_5Jc5h/view?usp=sharing', img: 'https://github.com/h3ma209/ui-designs-xd/blob/main/sardam-post-thumbnail.jpg?raw=true' },
                 { title: 'fashion ecom', link: 'https://drive.google.com/file/d/10Yt0LfsXYloVN9LaiToI-0w3Mo1X4OTa/view?usp=sharing', img: 'https://cdn.dribbble.com/users/5675139/screenshots/15610411/media/3c43c3e8a1db21d0fb4469bf4d711111.jpg?compress=1&resize=800x600' },
                 { title: 'car dealership', link: 'https://dribbble.com/shots/15527004-car-dealership', img: 'https://cdn.dribbble.com/users/5675139/screenshots/15527004/media/991a173559cb2938f3ccccc242a2095f.jpg?compress=1&resize=800x600' },
                 { title: 'roy jones jr', link: 'https://dribbble.com/shots/14548447-roy-jones-jr', img: 'https://cdn.dribbble.com/users/5675139/screenshots/14548447/media/bc10463e52e08c6fa9946adf301983aa.jpg?compress=1&resize=1600x1200' },

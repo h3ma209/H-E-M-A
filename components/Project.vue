@@ -7,7 +7,7 @@
                 </v-card-title>
                 <v-card-subtitle><span>{{project.tech}}</span></v-card-subtitle>
                 <v-card-text >
-                    <p class="ma-0">{{project.description}}</p>
+                    <p class="ma-0" style="max-width:90%;">{{project.description}}</p>
                 </v-card-text>
 
                 <v-card-actions >
